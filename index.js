@@ -23,6 +23,16 @@ const allGuesses=[];
 form.addEventListener('submit',(e)=>{
     e.preventDefault(); //default behaviour prevented
     const userInputValue=parseInt(userInput.value);
+ 
+     //limit of five guesses 
+    if(allGuesses.length>=5){
+        result.innerText='You have reached your limits';
+        submitBtn.disabled=true;
+        startGame.disabled=false;
+        startGame.style.cursor='pointer';
+        submitBtn.style.cursor='not-allowed';
+        return;
+    }
     
     // checking whether the userInput value is correct to the hidden random number or not 
 
