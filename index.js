@@ -31,6 +31,7 @@ form.addEventListener('submit',(e)=>{
         startGame.disabled=false;
         startGame.style.cursor='pointer';
         submitBtn.style.cursor='not-allowed';
+        userInput.value=''; 
         return;
     }
     
@@ -57,7 +58,7 @@ form.addEventListener('submit',(e)=>{
     userInput.value='';
 });
 
-//start button 
+//Button to resart the game
 startGame.addEventListener('click', ()=>{
  guessTag.innerText='';
  result.innerText='';
