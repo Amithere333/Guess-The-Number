@@ -7,3 +7,4 @@ A simple number guessing game built with HTML, CSS, and JavaScript. The player g
  ✅ Tracks previous guesses.
  ✅ Restart Functionality.
  ✅ Responsive Design.
+ ✅ Guess limit added.
