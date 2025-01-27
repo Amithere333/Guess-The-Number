@@ -26,7 +26,7 @@ form.addEventListener('submit',(e)=>{
  
      //limit of five guesses 
     if(allGuesses.length>=5){
-        result.innerText='You have reached your limits';
+        result.innerText='You have reached your limits! Press Start to try again';
         submitBtn.disabled=true;
         startGame.disabled=false;
         startGame.style.cursor='pointer';
