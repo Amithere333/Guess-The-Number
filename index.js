@@ -25,7 +25,7 @@ form.addEventListener('submit',(e)=>{
     const userInputValue=parseInt(userInput.value);
     console.log(allGuesses);
 
-    if(allGuesses.length>=5){
+    if(allGuesses.length>=10){
         result.innerText='You have reached your limits, Click Start to try again!';
         submitBtn.disabled=true;
         startGame.disabled=false;
