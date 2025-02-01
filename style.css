@@ -1,10 +1,12 @@
 body{
     background-color: teal;  
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     min-height: 100vh;
     font-family:Arial, Helvetica, sans-serif;
+    padding:10px;
     
 }
 
@@ -15,14 +17,20 @@ body{
 }
 .container{
     background-color:rgb(190, 217, 221);
-    width: 50vw;
+    width:50vw;
     min-height: 50vh;
+    max-width:600px;
     border-radius: 5px;
     padding:30px;
     text-align: center;
-    max-width:600px;
     
 
+}
+
+h1{
+    text-shadow: 3px 2px white ;
+    margin-top:20px;
+    color:rgb(16, 96, 121);
 }
 
 #number{
@@ -37,7 +45,6 @@ body{
 
 .buttonStyle{
      
-     margin:auto;
      width:70px;
      height:40px;
      background-color: rgb(28, 153, 153);
@@ -58,17 +65,21 @@ body{
     margin-top:10px;
 }
 
+
+
 .pFonts{
     font-size:14px;
-    word-wrap:break-word;
     width:100%;
+    
 }
 
 /* added media query  */
-@media screen and (max-width:480px) {
+
+/* Phone and tablet */
+@media screen and (max-width:1024px) {
     .container{
         padding:20px;
-        width:95%;
+        width:90%;
 
     }    
 
