@@ -23,17 +23,18 @@ const allGuesses=[];
 form.addEventListener('submit',(e)=>{
     e.preventDefault(); //default behaviour prevented
     const userInputValue=parseInt(userInput.value);
- 
-     //limit of five guesses 
+    console.log(allGuesses);
+
     if(allGuesses.length>=5){
-        result.innerText='You have reached your limits! Press Start to try again';
+        result.innerText='You have reached your limits, Click Start to try again!';
         submitBtn.disabled=true;
         startGame.disabled=false;
         startGame.style.cursor='pointer';
         submitBtn.style.cursor='not-allowed';
-        userInput.value=''; 
+        userInput.value='';
         return;
     }
+    
     
     // checking whether the userInput value is correct to the hidden random number or not 
 
@@ -58,7 +59,7 @@ form.addEventListener('submit',(e)=>{
     userInput.value='';
 });
 
-//Button to resart the game
+//start button 
 startGame.addEventListener('click', ()=>{
  guessTag.innerText='';
  result.innerText='';
