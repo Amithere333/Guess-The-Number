@@ -4,7 +4,11 @@ A simple number guessing game built with HTML, CSS, and JavaScript. The player g
 #Features->
 
  ✅ Random number generation.
+ 
  ✅ Tracks previous guesses.
+ 
  ✅ Restart Functionality.
+ 
  ✅ Responsive Design.
+ 
  ✅ Guess limit added.
